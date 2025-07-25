@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,248 +8,117 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <style>
     :root {
-      --blue: #0066cc;
+      --blue: #007bff;
       --light-gray: #f5f5f5;
       --white: #ffffff;
       --dark-gray: #333333;
-      --radius: 8px;
+      --radius: 12px;
+      --section-padding: 120px;
     }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Arial', sans-serif;
-      color: var(--dark-gray);
-      line-height: 1.6;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: var(--white);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 100;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 60px;
-    }
-
-    nav .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: var(--blue);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--dark-gray);
-      font-weight: 500;
-    }
-
-    section {
-      padding: 100px 0;
-    }
-
-    .hero {
-      background: var(--light-gray);
-      text-align: center;
-      padding: 160px 20px 100px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      color: var(--blue);
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
-
-    .btn-primary {
-      background: var(--blue);
-      color: var(--white);
-      padding: 12px 30px;
-      border: none;
-      border-radius: var(--radius);
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: var(--radius);
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      color: var(--blue);
-      margin-bottom: 10px;
-    }
-
-    .icon-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    .icon-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
-
-    .icon-list li::before {
-      content: '✔';
-      color: var(--blue);
-      font-weight: bold;
-      margin-top: 4px;
-    }
-
-    .history {
-      background: var(--light-gray);
-    }
-
-    .footer {
-      background: var(--dark-gray);
-      color: var(--white);
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      z-index: 100;
-    }
-
-    .whatsapp img {
-      width: 32px;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; color: var(--dark-gray); line-height: 1.6; background: var(--white); }
+    header { position: fixed; top: 0; width: 100%; background: var(--white); box-shadow: 0 2px 6px rgba(0,0,0,0.1); z-index: 100; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    nav { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    nav .logo { font-size: 1.8rem; font-weight: bold; color: var(--blue); }
+    nav ul { list-style: none; display: flex; gap: 25px; }
+    nav a { text-decoration: none; color: var(--dark-gray); font-weight: 600; }
+    section { padding: var(--section-padding) 0; }
+    /* Hero Section */
+    .hero { background: var(--light-gray); text-align: center; padding: 180px 20px 140px; }
+    .hero h1 { font-size: 3rem; color: var(--blue); margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+    /* Button */
+    .btn-primary { background: var(--blue); color: var(--white); padding: 14px 36px; border: none; border-radius: var(--radius); cursor: pointer; font-size: 1.1rem; }
+    /* Solutions Section */
+    #solutions { background: var(--white); margin-bottom: var(--section-padding); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .card { background: var(--white); border: 1px solid rgba(0,0,0,0.05); border-radius: var(--radius); padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: left; }
+    .card h3 { color: var(--blue); font-size: 2rem; margin-bottom: 15px; }
+    .card h4 { color: var(--dark-gray); font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; }
+    .card p { font-size: 1rem; margin-bottom: 0; }
+    /* History Section */
+    #history { background: var(--light-gray); }
+    .history h2 { color: var(--blue); }
+    /* Contact Section */
+    #contact { background: var(--white); }
+    /* Footer */
+    .footer { background: var(--blue); color: var(--white); text-align: center; padding: 30px 0; }
+    .footer p { margin: 0; font-size: 0.9rem; }
+    /* WhatsApp Button */
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 100; }
+    .whatsapp img { width: 32px; }
   </style>
 </head>
-
 <body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">R2</div>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#solutions">Soluções</a></li>
+        <li><a href="#history">Histórico</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">R2</div>
-        <ul>
-          <li><a href="#hero">Início</a></li>
-          <li><a href="#solutions">Soluções</a></li>
-          <li><a href="#history">Histórico</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
+<section id="hero" class="hero" data-aos="fade-up">
+  <div class="container">
+    <h1>Digitalizando Concessionárias, Acelerando Resultados</h1>
+    <p>Transforme processos manuais em vendas adicionais, reduzindo custos e aumentando receitas em até 30% com nossas soluções integradas.</p>
+    <button class="btn-primary" onclick="window.open('https://wa.me/5548988016232')">Fale com um especialista</button>
+  </div>
+</section>
+
+<section id="solutions" class="container" data-aos="fade-right">
+  <h2>Soluções</h2>
+  <div class="cards">
+    <div class="card" data-aos="zoom-in">
+      <h3>Checklist Digital</h3>
+      <h4>Maximize a Eficiência</h4>
+      <p>Implante checklists em tablets para eliminar erros, aumentar a produtividade e reduzir em até 40% o tempo de atendimento.</p>
     </div>
-  </header>
-
-  <section id="hero" class="hero" data-aos="fade-up">
-    <div class="container">
-      <h1>Digitalizando concessionárias, acelerando resultados</h1>
-      <p>Impulsione vendas, agilidade operacional e satisfação do cliente com nossas soluções digitais.</p>
-      <button class="btn-primary" onclick="window.open('https://wa.me/5548988016232')">Fale com um especialista</button>
+    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+      <h3>Loja de Acessórios</h3>
+      <h4>Incremento de Faturamento</h4>
+      <p>Disponibilize uma vitrine online personalizada, potencializando vendas de peças e acessórios com orçamentos instantâneos.</p>
     </div>
-  </section>
-
-  <section id="solutions" class="container" data-aos="fade-right">
-    <h2>Soluções</h2>
-    <div class="cards">
-      <div class="card" data-aos="zoom-in">
-        <img src="https://via.placeholder.com/400x250?text=Checklist+Digital" alt="Checklist Digital">
-        <h3>Checklist Digital</h3>
-        <p>Substitua processos manuais por um checklist no tablet para maior controle e agilidade.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="100">
-        <img src="https://via.placeholder.com/400x250?text=Loja+de+Acess%C3%B3rios" alt="Loja de Acessórios">
-        <h3>Loja de Acessórios</h3>
-        <p>Ofereça uma vitrine online de acessórios diretamente para seu cliente montar orçamentos.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="200">
-        <img src="https://via.placeholder.com/400x250?text=Dashboard" alt="Dashboard de Resultados">
-        <h3>Dashboard</h3>
-        <p>Visualize indicadores chave em tempo real e tome decisões baseadas em dados.</p>
-      </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+      <h3>Dashboard de Resultados</h3>
+      <h4>Visão Estratégica</h4>
+      <p>Monitore KPIs em tempo real para tomadas de decisão assertivas, identificando oportunidades de crescimento imediato.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="history" class="history" data-aos="fade-left">
-    <div class="container">
-      <h2>Nosso Histórico</h2>
-      <p>Fundada com base em mais de 20 anos de experiência no setor automotivo, a R2 nasceu para atender a demanda de
-        concessionárias que buscam <strong>modernização</strong>, <strong>agilidade</strong> e <strong>resultados
-          rápidos</strong>. Nossas soluções são desenvolvidas a partir das necessidades reais dos clientes, garantindo
-        retorno sobre investimento em pouco tempo.</p>
-    </div>
-  </section>
+<section id="history" class="history" data-aos="fade-left">
+  <div class="container">
+    <h2>Nosso Histórico</h2>
+    <p>Com mais de 20 anos no setor automotivo, a R2 nasceu para atender concessionárias que buscam modernização, agilidade e resultados rápidos. Nossas soluções, desenvolvidas a partir de demandas reais, proporcionam retorno sobre investimento em semanas.</p>
+  </div>
+</section>
 
-  <section id="contact" class="container" data-aos="fade-up">
-    <h2>Contato</h2>
-    <p>Pronto para transformar sua concessionária? Fale com a R2 Consultoria e Tecnologia:</p>
-    <p>Email: contato@r2consultoria.com.br</p>
-    <p>Tel: (48) 98801-6232</p>
-  </section>
+<section id="contact" class="container" data-aos="fade-up">
+  <h2>Contato</h2>
+  <p>Quer impulsionar sua concessionária? Entre em contato:</p>
+  <p>Email: suporte@r2consultoria.com.br | Tel: (48) 98801-6232</p>
+</section>
 
-  <footer class="footer" data-aos="fade-up">
-    <p>&copy; 2025 R2 Consultoria e Tecnologia. Todos os direitos reservados.</p>
-  </footer>
+<footer class="footer" data-aos="fade-up">
+  <p>&copy; 2025 R2 Consultoria e Tecnologia. Todos os direitos reservados.</p>
+</footer>
 
-  <a class="whatsapp" href="https://wa.me/5548988016232" target="_blank">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/whatsapp.svg" alt="WhatsApp">
-  </a>
+<a class="whatsapp" href="https://wa.me/5548988016232" target="_blank">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/whatsapp.svg" alt="WhatsApp">
+</a>
 
-  <!-- AOS Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, once: true });
-  </script>
+<!-- AOS Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
 </body>
-
 </html>
