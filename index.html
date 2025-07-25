@@ -1,12 +1,128 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>R2 Consultoria e Tecnologia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1e293b;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #38bdf8;
+    }
+    section p {
+      margin-bottom: 1rem;
+    }
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .images img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    footer {
+      background-color: #1e293b;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bem-vindo à R2 Consultoria e Tecnologia</h1>
-  <p>Especialistas em soluções digitais, automação e inovação.</p>
-  <p>Entre em contato: <a href="mailto:rodrigo@r2consultoria.com.br">rodrigo@r2consultoria.com.br</a></p>
+  <header>
+    <h1>R2 Consultoria e Tecnologia</h1>
+    <p>Soluções digitais sob medida para Concessionárias</p>
+  </header>
+
+  <section>
+    <h2>Sobre a R2</h2>
+    <p>Somos uma empresa de tecnologia especializada no desenvolvimento de plataformas para o setor automotivo. Criamos soluções digitais para otimizar processos, aumentar vendas e melhorar a experiência do cliente em concessionárias e oficinas.</p>
+    <p>Utilizamos ferramentas modernas como Bubble.io para entregar sistemas eficientes, rápidos e personalizáveis.</p>
+  </section>
+
+  <section>
+    <h2>Nossas Soluções</h2>
+    <p>Desenvolvemos plataformas adaptáveis às necessidades de cada cliente, incluindo:</p>
+    <ul>
+      <li>✔️ Checklists Digitais de Pós-Venda</li>
+      <li>✔️ Catálogos de Serviços e Acessórios</li>
+      <li>✔️ Lojas integradas ao atendimento</li>
+      <li>✔️ Dashboards com Indicadores e Performance</li>
+    </ul>
+    <div class="images">
+      <img src="https://images.unsplash.com/photo-1581091012184-7e0cdfbb6799?auto=format&fit=crop&w=800&q=80" alt="Checklist em tablet">
+      <img src="https://images.unsplash.com/photo-1611186871348-b5cb0c3d9bb3?auto=format&fit=crop&w=800&q=80" alt="E-commerce de acessórios">
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1?auto=format&fit=crop&w=800&q=80" alt="Dashboard com resultados">
+    </div>
+  </section>
+
+  <section id="whatsapp" class="whatsapp-section">
+  <div class="container">
+    <h2>Fale com a R2 agora mesmo</h2>
+    <p>Está pronto para modernizar sua concessionária? Fale conosco no WhatsApp!</p>
+    <a href="https://wa.me/5548988016232" class="whatsapp-btn" target="_blank" rel="noopener">
+      💬 Falar no WhatsApp
+    </a>
+  </div>
+</section>
+
+  <section>
+    <h2>Fale com a R2</h2>
+    <p>Entre em contato para saber como podemos digitalizar os processos da sua concessionária:</p>
+    <p>
+      📧 <a href="mailto:contato@r2consultoria.com.br">suporte@r2consultoria.com.br</a><br />
+      📱 (XX) XXXXX-XXXX<br />
+      🌐 <a href="https://r2consultoria.com.br">r2consultoria.com.br</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 R2 Consultoria e Tecnologia. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
